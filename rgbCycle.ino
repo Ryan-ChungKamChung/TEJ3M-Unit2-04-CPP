@@ -2,10 +2,10 @@
 //
 // Created by Ryan Chung Kam Chung
 // Created in February 2021
-// This program cycles between RGB colours
+// This program makes the 13th pin (LED) blink with incremental delay
 
 // Global variables
-const int REDPIN = 13, GREENPIN = 11, BLUEPIN = 12;
+const int REDPIN = 13, GREENPIN = 12, BLUEPIN = 11;
 
 
 void setup() {                
@@ -69,6 +69,6 @@ void loop() {
   delay(BLINKTIME);
   digitalWrite(REDPIN, LOW);
   digitalWrite(GREENPIN, LOW);
-  digitalWrite(BLUEPIN, HIGH);
+  digitalWrite(BLUEPIN, LOW);
   delay(DELAYTIME);
 }
